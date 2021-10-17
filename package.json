@@ -1,0 +1,15 @@
+{
+  "name": "lowcode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://hub.fastgit.org/Determination-cheng/lowcode.git",
+  "author": "Cheng <1003306162@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^7.4.0",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.1"
+  }
+}
