@@ -1,5 +1,4 @@
 import { Observable } from "rxjs"
-import {log} from "util";
 
 type ObserverFunction = (data: any) => void
 
@@ -32,8 +31,7 @@ export class Emitter<Topic extends string | number> {
 }
 
 //* 测试
-enum Topics { A, B, C }
-const emitter = new Emitter<Topics>()
-
-emitter.on(Topics.A).subscribe(data => console.log('a triggered', data))
-emitter.emit(Topics.A, 'this is A data')
+// enum Topics { A, B, C }
+// const emitter = new Emitter<Topics>()
+// emitter.on(Topics.A).subscribe(data => console.log('a triggered', data))
+// emitter.emit(Topics.A, 'this is A data')
