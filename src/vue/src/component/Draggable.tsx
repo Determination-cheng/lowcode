@@ -10,8 +10,8 @@ type UseDragType = {
 
 function useDrag({ onDragend, onDragstart }: UseDragType) {
   const value = new DragValue()
-  const diffX = ref(value.getDiffX()),
-    diffY = ref(value.getDiffY())
+  const diffX = ref(value.getDiffX())
+  const diffY = ref(value.getDiffY())
   const handlers = {
     onDragstart(e: DragEvent) {
       value.start(e)
@@ -66,7 +66,7 @@ export const Draggable = defineComponent({
         style: {
           position: 'absolute',
           left: `${props.initialPosition?.[0] || 0}px`,
-          right: `${props.initialPosition?.[1] || 0}px`,
+          top: `${props.initialPosition?.[1] || 0}px`,
           transform: `translate(${diffX.value}px, ${diffY.value}px)`,
         },
       })

@@ -1,5 +1,6 @@
 import './layout.css'
+import IndexEditor from '@/vue/src/component/IndexEditor'
 
 export default () => {
-  return <div>app</div>
+  return <IndexEditor />
 }
